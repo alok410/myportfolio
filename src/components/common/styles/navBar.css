@@ -1,0 +1,95 @@
+@import "../../../data/styles.css";
+
+/* Container for Navbar */
+.nav-container {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #333; /* Dark background for contrast */
+	padding: 10px 0; /* Padding for the top and bottom */
+}
+
+/* Navbar Styling */
+.navbar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0; /* Stick to the top */
+	width: 100%;
+	z-index: 1000;
+	background: #fff; /* Light background for the navbar */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Navbar Background Styling */
+.nav-background {
+	width: auto; /* Full width of its parent */
+	height: 60px; /* Adjusted height */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 30px; /* Rounded corners */
+	background: #f8f9fa; /* Light background color */
+	padding: 0 100%; /* Horizontal padding */
+}
+
+/* List Styling */
+.nav-list {
+	display: flex;
+	justify-content: space-evenly;
+	list-style: none;
+	width: 80%; /* Adjust width as needed */
+	padding: 0;
+	margin: 0;
+}
+
+/* List Item Styling */
+.nav-item {
+	font-weight: 600; /* Slightly bolder font */
+	font-size: 1rem; /* Increased font size */
+	padding: 0 15px; /* Padding for each nav item */
+}
+
+.nav-item.active a {
+	color: #007bff; /* Active link color */
+}
+
+.nav-item a {
+	text-decoration: none;
+	color: #333; /* Default link color */
+	transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.nav-item a:hover {
+	color: #007bff; /* Hover link color */
+	transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+	.nav-background {
+		width: 90%; /* Adjust width for mobile view */
+		height: 50px; /* Reduced height for mobile */
+		padding: 0 10px; /* Reduced horizontal padding for mobile */
+	}
+
+	.nav-item {
+		font-size: 0.9rem; /* Slightly smaller font size for mobile */
+		padding: 0 10px; /* Adjust padding for mobile */
+	}
+}
+
+@media (max-width: 480px) {
+	.nav-background {
+		width: 100%; /* Full width for very small screens */
+		height: 50px; /* Height remains the same */
+		padding: 0 10px; /* Minimal horizontal padding for very small screens */
+	}
+
+	.nav-item {
+		font-size: 0.8rem; /* Even smaller font size for very small screens */
+		padding: 0 5px; /* Minimal padding for very small screens */
+	}
+}

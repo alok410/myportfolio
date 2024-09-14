@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
+import ReactGA from "react-ga4";
+
+import Homepage from "./pages/homepage";
+import About from "./pages/about";
+import Projects from "./pages/projects";
+import Contact from "./pages/contact";
+import Notfound from "./pages/404";
+
+import { TRACKING_ID } from "./data/tracking";
+import "./app.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	
+
+	return (
+		<div className="App">
+			<Routes>
+				<Route path="/" element={<Homepage />} />
+				<Route path="/about" element={<About />} />
+				<Route path="/projects" element={<Projects />} />
+				<Route path="/contact" element={<Contact />} />
+				<Route path="*" element={<Notfound />} />
+			</Routes>
+		</div>
+	);
 }
 
 export default App;

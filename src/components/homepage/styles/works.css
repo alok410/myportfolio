@@ -1,0 +1,110 @@
+@import "../../../data/styles.css";
+
+/* Ensure overall container padding and margin are correct */
+.works-body {
+    margin-bottom: 30px; /* Increased margin for better spacing */
+}
+
+/* Work container styling with improved layout */
+.work {
+    display: flex;
+    flex-direction: column; /* Changed to column layout */
+    align-items: center;
+    padding: 20px; /* Added padding for better spacing */
+    width: 900px; /* Full width for responsiveness */
+    max-width: 900px; /* Maximum width for large screens */
+    background: #fff; /* White background for each work item */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 0 auto; /* Center the work items */
+    position: relative; /* For absolute positioning of child elements */
+    margin-bottom: 20px; /* Space between work items */
+    text-align: center; /* Center align text */
+}
+
+/* Image styling with improved dimensions */
+.work-image {
+    height: 50px; /* Increased size for better visibility */
+    width: 50px; /* Increased size for better visibility */
+    border-radius: 50%;
+    outline: 4px solid #fff; /* Reduced outline for a cleaner look */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Softer shadow */
+    margin-bottom: 15px; /* Space between image and title */
+}
+
+/* Title styling with better font size and color */
+.work-title {
+    font-size: 18px; /* Increased font size for readability */
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin: 0; /* Removed default margin */
+}
+
+/* Subtitle styling moved to be under the title */
+.work-subtitle {
+    font-size: 14px; /* Slightly larger font size */
+    color: var(--secondary-color);
+    margin-top: 10px; /* Space below the title */
+}
+
+/* Duration styling with better alignment and spacing */
+.work-duration {
+    font-size: 14px; /* Increased font size for readability */
+    color: var(--tertiary-color);
+    position: absolute;
+    right: 20px; /* Positioned to the right */
+    bottom: 20px; /* Positioned at the bottom */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .work {
+        padding: 15px;
+    }
+
+    .work-image {
+        height: 40px; /* Adjusted size for smaller screens */
+        width: 40px; /* Adjusted size for smaller screens */
+    }
+
+    .work-title {
+        font-size: 16px; /* Adjusted font size */
+    }
+
+    .work-subtitle {
+        font-size: 12px; /* Adjusted font size */
+        margin-top: 10px; /* Added margin for spacing */
+    }
+
+    .work-duration {
+        font-size: 12px; /* Adjusted font size */
+        right: 10px; /* Adjusted position */
+        bottom: 10px; /* Adjusted position */
+    }
+}
+
+@media (max-width: 480px) {
+    .work {
+        padding: 10px; /* Reduced padding */
+    }
+
+    .work-image {
+        height: 30px; /* Further reduced size */
+        width: 30px; /* Further reduced size */
+    }
+
+    .work-title {
+        font-size: 14px; /* Further reduced font size */
+    }
+
+    .work-subtitle {
+        font-size: 10px; /* Further reduced font size */
+        margin-top: 8px; /* Adjusted margin */
+    }
+
+    .work-duration {
+        font-size: 10px; /* Further reduced font size */
+        right: 5px; /* Adjusted position */
+        bottom: 5px; /* Adjusted position */
+    }
+}
