@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import "./styles/project.css";
 
 const Project = (props) => {
-	const { logo, title, description, linkText, link } = props;
+	const { logo, title, description, link } = props;
 
 	return (
-		<React.Fragment>
+		<React.Fragment>	
 			<div className="project">
 				<Link to={link}>
 					<div className="project-container">
