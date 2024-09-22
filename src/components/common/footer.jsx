@@ -24,7 +24,8 @@ const Footer = () => {
 						</li>
 					</ul>
 				</div>
-
+			
+				
 				<div className="footer-credits">
 					<div className="footer-credits-text">
 						© 2023 Alok. All Rights Reserved.

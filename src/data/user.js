@@ -37,10 +37,10 @@ const INFO = {
 			logo: "../Portfolio.jpg",
 		},
 		{
-			title: "Personal Bolg Website(ReactJS + Django)",
+			title: "Recipe Book Website(ReactJS + Django)",
 			description:
-				"I have created a personal blog site using Django as the backend and database support and combined with React.js as the dynamic frontend. The website is designed with advanced HTML and CSS to provide a rich and engaging user experience.",
-			logo: "../blog.png",
+				"Building a full-stack Recipe Book website using ReactJS for the frontend and Django for the backend to manage and display recipes.",
+			logo: "../recipe.png",
 		},
 		{
 			title: "Leave Request System(ReactJS + ExpressJS + SQL)",

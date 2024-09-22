@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import PropTypes from "prop-types";
-
 import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -59,9 +58,9 @@ const Homepage = () => {
 			}
 		};
 
-		window.add("scroll", handleScroll);
+		window.addEventListener("scroll", handleScroll);
 		return () => window.removeEventListener("scroll", handleScroll);
-	}, [logoSize, oldLogoSize ]);
+	}, [logoSize, oldLogoSize]);
 
 	const currentSEO = SEO.find((item) => item.page === "home");
 
@@ -144,7 +143,6 @@ const Homepage = () => {
 								</div>
 							</div>
 
-
 							<div className="homepage-after-title">
 								<div className="homepage-works">
 									<Works />
@@ -168,7 +166,7 @@ const Homepage = () => {
 									rel="noreferrer"
 									aria-label="GitHub"
 								>
-										<FontAwesomeIcon
+									<FontAwesomeIcon
 										icon={faGithub}
 										className="homepage-social-icon"
 									/>
@@ -195,32 +193,31 @@ const Homepage = () => {
 										className="homepage-social-icon"
 									/>
 								</a>
-								<a
-									href={`mailto:${INFO.main.email}`}
-									target="_blank"
-									rel="noreferrer"
-									aria-label="Email"
-								>
-									<FontAwesomeIcon
-										icon={faMailBulk}
-										className="homepage-social-icon"
-									/>
-								</a>
 							</div>
 
-							<div className="page-footer">
-								<Footer />
+							{/* New Download Resume Button */}
+							<div className="download-resume-button btnstyle">
+								<a
+									href="https://drive.google.com/file/d/1UrwMG3jzoliMXSXsD8tzNdQj7OxAxUH4/view?usp=sharing"
+									download="Resume.pdf"
+									className="btn btn-outline-primary"
+								>
+									Download Resume
+								</a>
 							</div>
 						</div>
 					</div>
 
+					<div className="page-footer">
+						<Footer/>
+					</div>
 					{showScrollTop && (
 						<button
 							className="scroll-to-top"
 							onClick={scrollToTop}
-							aria-label="Scroll to top"
+							aria-label="Scroll to Top"
 						>
-							↑
+							<FontAwesomeIcon icon={faMailBulk} />
 						</button>
 					)}
 				</div>
@@ -230,10 +227,7 @@ const Homepage = () => {
 };
 
 Homepage.propTypes = {
-	logoSize: PropTypes.number,
-	stayLogo: PropTypes.bool,
-	loading: PropTypes.bool,
-	showScrollTop: PropTypes.bool,
+	splitTitleIntoWords: PropTypes.func.isRequired,
 };
 
 export default Homepage;

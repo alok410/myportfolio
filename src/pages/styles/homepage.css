@@ -18,8 +18,9 @@
 
 .homepage-first-area {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	justify-content: center; /* Center the content horizontally */
+	align-items: center; /* Center the content vertically */
+	flex-wrap: wrap; /* Allow wrapping if necessary */
 }
 
 .homepage-first-area-left-side {
@@ -56,22 +57,26 @@
 
 .homepage-first-area-right-side {
 	display: flex;
+	justify-content: center; /* Center the image horizontally */
 	align-items: center;
+	width: 100%; /* Ensure it takes the full width */
 }
 
 .homepage-image-container {
 	width: 370px;
 	height: 500px;
+	margin: 0 auto; /* Center the image container */
 }
 
 .homepage-image-wrapper {
 	overflow: hidden;
 	height: 400px;
 	border-radius: 10%;
-	transform: rotate(3deg);
+	/* transform: rotate(3deg); */
 }
 
 .homepage-image-wrapper img {
+	margin-top: 20px;
 	width: 100%;
 }
 
@@ -115,6 +120,11 @@
 .homepage-works {
 	flex-basis: 600px;
 	padding-top: 30px;
+}
+
+.btnstyle{
+	margin-top: 25px;
+	margin-left: 400px;
 }
 
 @media (max-width: 1024px) {
