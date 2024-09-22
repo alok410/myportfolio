@@ -205,11 +205,12 @@ const Homepage = () => {
 									Download Resume
 								</a>
 							</div>
+
 						</div>
 					</div>
 
 					<div className="page-footer">
-						<Footer/>
+						<Footer />
 					</div>
 					{showScrollTop && (
 						<button

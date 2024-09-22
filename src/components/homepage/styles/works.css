@@ -11,13 +11,12 @@
     flex-direction: column; /* Changed to column layout */
     align-items: center;
     padding: 20px; /* Added padding for better spacing */
-    width: 900px; /* Full width for responsiveness */
+    width: 100%; /* Full width for responsiveness */
     max-width: 900px; /* Maximum width for large screens */
     background: #fff; /* White background for each work item */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     margin: 0 auto; /* Center the work items */
-    position: relative; /* For absolute positioning of child elements */
     margin-bottom: 20px; /* Space between work items */
     text-align: center; /* Center align text */
 }
@@ -51,7 +50,6 @@
 .work-duration {
     font-size: 14px; /* Increased font size for readability */
     color: var(--tertiary-color);
-    position: absolute;
     right: 20px; /* Positioned to the right */
     bottom: 20px; /* Positioned at the bottom */
 }

@@ -120,11 +120,14 @@
 .homepage-works {
 	flex-basis: 600px;
 	padding-top: 30px;
+	margin: 0 auto; /* Center the works component */
 }
 
-.btnstyle{
+.btnstyle {
 	margin-top: 25px;
-	margin-left: 400px;
+	margin-left: auto; /* Center button */
+	margin-right: auto; /* Center button */
+	display: block; /* Ensure the button takes up the block space */
 }
 
 @media (max-width: 1024px) {
@@ -177,7 +180,30 @@
 
 	.homepage-works {
 		flex-basis: auto;
-		margin-left: -25px;
-		margin-right: -25px;
+		margin-left: auto; /* Center for smaller screens */
+		margin-right: auto; /* Center for smaller screens */
 	}
+}
+
+
+.btnstyle {
+    text-align: center; /* Center the button */
+    margin-top: 25px; /* Space above the button */
+}
+
+.btn {
+    display: inline-block; /* Inline-block for button styling */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold text */
+    color: #fff; /* Text color */
+    background-color: var(--primary-color); /* Background color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* No underline */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.btn:hover {
+    background-color: var(--secondary-color); /* Change color on hover */
 }
