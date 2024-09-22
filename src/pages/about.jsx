@@ -208,6 +208,7 @@ const About = () => {
 								<div className="about-image-container">
 									<div className="about-image-wrapper">
 										<img
+                      style={{blockSize:"400px"}}
 											src="about.jpg"
 											alt="about"
 											className="about-image"
