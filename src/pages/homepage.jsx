@@ -198,7 +198,7 @@ const Homepage = () => {
 							{/* New Download Resume Button */}
 							<div className="download-resume-button btnstyle">
 								<a
-									href="https://filebin.net/lj6x9lxpb61h3rw8/Patel_Alok__3_.pdf"
+									href="https://filebin.net/kk0nwj7tg5icm9o2/Patel_Alok_.pdf"
 									download="Resume.pdf"
 									className="btn btn-outline-primary"
 								>
