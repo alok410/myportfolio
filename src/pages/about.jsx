@@ -136,7 +136,9 @@ const About = () => {
       e.currentTarget.style.boxShadow = "0px 4px 10px rgba(0, 0, 0, 0.3)";
     }}
   />
-  <img
+
+
+<img
     style={{
       height: "80px",
       width: "80px",
@@ -146,7 +148,7 @@ const About = () => {
       transition: "transform 0.3s, box-shadow 0.3s",
 		 
     }}
-    src="../expressJS.png"
+    src="../Dotnet.png"
     alt="ExpressJS"
     onMouseOver={(e) => {
       e.currentTarget.style.transform = "translateY(-5px)";
