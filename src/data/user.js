@@ -24,7 +24,7 @@ const INFO = {
 	about: {
 		title: "I’m Alok Patel. I live in India, where I design the future websites.",
 		description:
-			"I've successfully contributed to various projects over the years, with many of them being open-source and accessible for collaboration. I take pride in the progress I've made and welcome others to explore the codebase, offering any suggestions for improvements or enhancements. I believe in the value of collaboration as a means of continuous learning and growth, and I'm always open to new ideas and constructive feedback.",
+			"I have successfully contributed to various projects over the years, with many of them being open-source and accessible for collaboration. I take pride in the progress I've made and welcome others to explore the codebase, offering any suggestions for improvements or enhancements. I believe in the value of collaboration as a means of continuous learning and growth, and I'm always open to new ideas and constructive feedback.",
 	},
 
 	projects: [
