@@ -18,7 +18,7 @@ const INFO = {
 	homepage: {
 		title: "Versatile Web Developer and Creative Innovator.",
 		description:
-			"I am a back-end developer specializing in .NET with 1 year of experience building robust, secure, and reliable web applications. I have a deep understanding of .NET Core, C#, and other technologies, and enjoy solving complex problems while following best practices and industry standards. I promise to write cleanly, maintain authority, and continue to expand my knowledge. I am passionate about learning and growing, eager to take on new challenges and contribute to new projects that make an impact.",
+			"I am a backend developer specializing in Node.js, with experience in building scalable, secure, and reliable web applications using a variety of frameworks and technologies. I thrive on solving complex problems and continuously expanding my skill set. I am committed to writing high-quality code that adheres to best practices and industry standards. I am always eager to take on new challenges and seek opportunities to grow as a developer.",
 	},
 
 	about: {
