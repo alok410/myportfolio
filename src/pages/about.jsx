@@ -148,7 +148,7 @@ const About = () => {
       transition: "transform 0.3s, box-shadow 0.3s",
 		 
     }}
-    src="../Dotnet.png"
+    src="../expressJS.png"
     alt="ExpressJS"
     onMouseOver={(e) => {
       e.currentTarget.style.transform = "translateY(-5px)";
